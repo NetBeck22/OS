@@ -222,10 +222,6 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
     <span class="di-emoji">🗂️</span>
     <span class="di-label">Projecten</span>
   </div>
-  <div class="desktop-icon" style="top:280px;left:24px" ondblclick="openWindow('radio')">
-    <span class="di-emoji">🎧</span>
-    <span class="di-label">Radio Ideeën</span>
-  </div>
   <div class="desktop-icon" style="top:380px;left:24px" ondblclick="openWindow('cv')">
     <span class="di-emoji">📄</span>
     <span class="di-label">CV.pdf</span>
@@ -291,11 +287,11 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
     <div class="about-bio">
       <p>Ik bouw <strong>dingen die mensen bijblijven</strong>. Geen standaard webapps. <em>Immersive experiences</em> die mensen laten voelen wat ze normaal niet zien.</p>
       <br>
-      <p>Van een <strong>AI surveillance installatie</strong> die jouw echte device data toont, tot een <strong>murder mystery dinner</strong> waar mijn vrienden personages werden — en een <strong>Halloween escape room</strong> die ik op mijn 16e op de zolder bouwde. Ze spreken er nu nog over.</p>
+      <p>Van een <strong>AI surveillance installatie</strong> die jouw echte device data toont, tot een <strong>murder mystery dinner</strong> waar mijn vrienden personages werden en een <strong>Halloween escape room</strong> die ik op mijn 16e op de zolder bouwde. Ze spreken er nu nog over.</p>
       <br>
-      <p>Dit jaar bouwde ik ook mijn eerste <strong>freelance website</strong> voor een bedrijf. Solo, op deadline, opgeleverd. Ik ben master Computerwetenschappen aan de <strong>KU Leuven</strong> en bijna bachelor aan de <strong>UHasselt</strong>.</p>
+      <p>Dit jaar bouwde ik ook mijn eerste <strong>freelance website</strong> voor een bedrijf. Solo, op deadline, opgeleverd. Ik ben bezig aan mijnn master Information Management aan de <strong>KU Leuven</strong> en bachelor aan de <strong>UHasselt</strong>.</p>
       <br>
-      <p>Buiten code: <strong>Tetris</strong> tot mijn ogen pijn doen en <strong>sudoku's</strong> oplossen op de trein. Patroondenken is mijn factory mode.</p>
+      <p>Buiten code: <strong>Tetris</strong> tot mijn ogen pijn doen en <strong>sudoku's</strong> oplossen. Patroondenken is mijn factory mode.</p>
     </div>
     <div class="about-tags">
       <span class="about-tag">React</span><span class="about-tag">Next.js</span><span class="about-tag">Node.js</span><span class="about-tag">TypeScript</span><span class="about-tag">Python</span><span class="about-tag">C++</span><span class="about-tag">SQL</span><span class="about-tag">AI tools</span><span class="about-tag">Immersive design</span><span class="about-tag">🎮 Game dev</span>
@@ -318,18 +314,26 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
       <div class="proj-item">
         <div class="proj-item-header">
           <div class="proj-item-title">🔍 NETBECK Studio</div>
-          <div class="proj-item-year">2024–2025</div>
+          <div class="proj-item-year">2026</div>
         </div>
-        <div class="proj-item-desc">Belgium's eerste AI awareness studio. Een browser-installatie die jouw echte device data toont als surveillance dossier. Bezoekers voelen hoe het is om geprofileerd te worden.</div>
+        <div class="proj-item-desc">Data awareness studio. Een browser-installatie die bezoekers laat voelen hoe het is om geprofileerd te worden.</div>
         <a href="https://netbeck22.github.io/STUDIO/studio.html" target="_blank" class="proj-item-link">Ervaar het → </a>
       </div>
       <div class="proj-item">
         <div class="proj-item-header">
           <div class="proj-item-title">🎭 This Is Not A Birthday Party</div>
-          <div class="proj-item-year">2024</div>
+          <div class="proj-item-year">2025</div>
         </div>
         <div class="proj-item-desc">Murder mystery dinner voor mijn verjaardag. AI-gegenereerde personages, cinematic trailer, atmospheric website. Een volledige immersive experience voor vrienden.</div>
         <a href="https://netbeck22.github.io/ThisIsNotABirthdayParty/index.html" target="_blank" class="proj-item-link">Enter the world →</a>
+      </div>
+      <div class="proj-item">
+        <div class="proj-item-header">
+          <div class="proj-item-title">💼 De zatte mol</div>
+          <div class="proj-item-year">2026</div>
+        </div>
+        <div class="proj-item-desc">De mol voor het vriendinnen weekend. Een webapp die alles beschikbaar stelt om de mol te spelen op ons weekend en leuke opdrachten aankondigd.</div>
+        <a href="https://netbeck22.github.io/DeZatteMol/" target="_blank" class="proj-item-link">Enter the game →</a>
       </div>
       <div class="proj-item">
         <div class="proj-item-header">
@@ -371,119 +375,9 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
   </div>
 </div>
 
-<!-- RADIO IDEAS -->
-<div class="window" id="win-radio">
-  <div class="win-titlebar" onmousedown="startDrag(event,'win-radio')">
-    <div class="win-dots">
-      <div class="win-dot close" onclick="closeWindow('win-radio')" title="Sluiten"></div>
-      <div class="win-dot min" onclick="minimizeWindow('win-radio')" title="Minimaliseren"></div>
-      <div class="win-dot max" onclick="maximizeWindow('win-radio')" title="Volledig scherm"></div>
-    </div>
-    <div class="win-title">Radio Ideeën — voor Qmusic · Joe · Willy</div>
-  </div>
-  <div class="win-body">
-    <div class="radio-intro">Klik een idee open en speel met de live preview. Dit zijn geen mockups — dit zijn werkende prototypes.</div>
-    <div class="radio-ideas-list">
 
-      <!-- VIBE CHECK -->
-      <div class="ri-item" id="ri-0">
-        <div class="ri-header" onclick="toggleIdea('ri-0')">
-          <span class="ri-emoji">🎭</span>
-          <div class="ri-info">
-            <div class="ri-name">Vibe Check</div>
-            <div class="ri-tagline">Luisteraars stemmen live. De show volgt hun gevoel.</div>
-          </div>
-          <span class="ri-expand">▶</span>
-        </div>
-        <div class="ri-preview">
-          <div class="vc-label">Hoe voel je je NU?</div>
-          <div class="vc-opts">
-            <button class="vc-btn" onclick="vcVote(this,'🔥 Op fire')">🔥 Op fire</button>
-            <button class="vc-btn" onclick="vcVote(this,'😴 Moe maar hier')">😴 Moe maar hier</button>
-            <button class="vc-btn" onclick="vcVote(this,'🥹 In mijn feels')">🥹 In mijn feels</button>
-            <button class="vc-btn" onclick="vcVote(this,'🤪 Chaotisch')">🤪 Chaotisch</button>
-          </div>
-          <div class="vc-result" id="vc-result"></div>
-        </div>
-      </div>
 
-      <!-- HOT TAKE COURT -->
-      <div class="ri-item" id="ri-1">
-        <div class="ri-header" onclick="toggleIdea('ri-1')">
-          <span class="ri-emoji">⚖️</span>
-          <div class="ri-info">
-            <div class="ri-name">Hot Take Court</div>
-            <div class="ri-tagline">Controversiële stelling. Luisteraars zijn de jury.</div>
-          </div>
-          <span class="ri-expand">▶</span>
-        </div>
-        <div class="ri-preview">
-          <div class="ht-statement" id="ht-statement">"Ananas op pizza is gewoon goed en jullie zijn verkeerd."</div>
-          <div class="ht-btns">
-            <button class="ht-btn ht-agree" onclick="htVote('agree')">✅ Mee eens</button>
-            <button class="ht-btn ht-dis" onclick="htVote('dis')">❌ Nooit</button>
-          </div>
-          <div class="ht-meter" id="ht-meter">
-            <div class="ht-agree-bar" id="ht-a" style="width:58%">58%</div>
-            <div class="ht-dis-bar" id="ht-d" style="width:42%">42%</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- WIE LIEGT ER -->
-      <div class="ri-item" id="ri-2">
-        <div class="ri-header" onclick="toggleIdea('ri-2')">
-          <span class="ri-emoji">🤥</span>
-          <div class="ri-info">
-            <div class="ri-name">Wie Liegt Er?</div>
-            <div class="ri-tagline">3 fun facts. Eén is nep. Raad de leugenaar.</div>
-          </div>
-          <span class="ri-expand">▶</span>
-        </div>
-        <div class="ri-preview">
-          <div class="wl-cards">
-            <div class="wl-card" id="wl-0" onclick="wlGuess(0)">
-              <div class="wl-name">👩‍🦰 Tine</div>
-              <div class="wl-fact">"Ik overtuigde de burgemeester om mijn naam te dragen."</div>
-            </div>
-            <div class="wl-card" id="wl-1" onclick="wlGuess(1)">
-              <div class="wl-name">🧔 Kevin</div>
-              <div class="wl-fact">"Ik slaap met oordopjes wegens angst voor motten in m'n oor."</div>
-            </div>
-            <div class="wl-card" id="wl-2" onclick="wlGuess(2)">
-              <div class="wl-name">👱‍♀️ Lies</div>
-              <div class="wl-fact">"Mijn kat won al 2x het dammer-kampioenschap van ons dorp."</div>
-            </div>
-          </div>
-          <div class="wl-result" id="wl-result">Klik wie je denkt dat liegt 👆</div>
-        </div>
-      </div>
-
-      <!-- GHOST TRACK -->
-      <div class="ri-item" id="ri-3">
-        <div class="ri-header" onclick="toggleIdea('ri-3')">
-          <span class="ri-emoji">👻</span>
-          <div class="ri-info">
-            <div class="ri-name">Ghost Track</div>
-            <div class="ri-tagline">Raad het nummer op golfvorm alleen. Geen geluid.</div>
-          </div>
-          <span class="ri-expand">▶</span>
-        </div>
-        <div class="ri-preview">
-          <div id="mini-waveform" style="display:flex;gap:2px;align-items:center;justify-content:center;height:36px;margin-bottom:.6rem"></div>
-          <div style="font-size:.6rem;color:var(--muted);text-align:center;margin-bottom:.5rem" id="mini-hint">Hint: uitgebracht in 2019</div>
-          <div style="display:flex;gap:.4rem">
-            <input id="mini-ghost-input" style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(157,113,255,.3);border-radius:6px;padding:.4rem .6rem;color:var(--text);font-family:'Space Mono',monospace;font-size:.65rem;outline:none;cursor:none" placeholder="Artiest – Nummer..." onkeydown="if(event.key==='Enter')miniGhostGuess()">
-            <button onclick="miniGhostGuess()" style="background:var(--purple);border:none;border-radius:6px;color:#fff;padding:.4rem .7rem;font-family:'Syne',sans-serif;font-weight:700;font-size:.65rem;cursor:none">Raad</button>
-          </div>
-          <div id="mini-ghost-result" style="font-size:.63rem;color:var(--muted);margin-top:.4rem;min-height:.9rem"></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
+ 
 <!-- CV -->
 <div class="window" id="win-cv">
   <div class="win-titlebar" onmousedown="startDrag(event,'win-cv')">
